@@ -1,4 +1,5 @@
 site_name: Laboratory for Child Brain Development
+site_url: https://www.childbrainlab.github.io
 theme:
   name: material
   palette:

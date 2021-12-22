@@ -1,4 +1,4 @@
-# [childbrainlab.github.io](childbrainlab.github.io)
+# [childbrainlab.github.io](https://www.childbrainlab.github.io)
 
 # Docs
 Pages and walkthroughs intended for getting new lab members set up, documenting different lab-related software, or for writing tutorials.
