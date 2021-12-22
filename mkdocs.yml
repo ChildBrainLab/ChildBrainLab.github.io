@@ -1,33 +1,32 @@
-site_name: Laboratory for Child Brain Development Docs
+site_name: Laboratory for Child Brain Development
 theme:
-        name: material
-        palette:
-              - scheme: default
-                toggle:
-                  icon: material/toggle-switch-off-outline
-                  name: Switch to dark mode
-               primary: light blue
-                accent: amber
-              - scheme: slate
-                toggle:
-                  icon: material/toggle-switch
-                  name: Switch to light mode
-               primary: light blue
-                accent: amber
-        font:
-                text: Roboto
-                code: Roboto Mono
-        logo: assets/logo.png
-        features:
-                - navigation.tabs
-                - navigation.tabs.sticky
-                - navigation.expand
-                - navigation.indexes
-                - toc.integrate
-                - navigation.top
-                - tags
-                - header.autohide
-        plugins:
-                - search:
-                        lang: en
-        
+  name: material
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: light blue
+      accent: amber
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: light blue
+      accent: amber
+      font:
+        text: Roboto
+        code: Roboto Mono
+      logo: assets/logo.jpg
+      features:
+      - navigation.tabs
+      - navigation.tabs.sticky
+      - navigation.expand
+      - navigation.indexes
+      - toc.integrate
+      - navigation.top
+      - tags
+      - header.autohide
+      plugins:
+      - search:
+        lang: en
