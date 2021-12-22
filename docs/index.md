@@ -11,3 +11,4 @@ Use the search tool, or go to any of the pages on the menu bar to find the help,
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+    README.md     # The README file shown on the GitHub repository page. 
