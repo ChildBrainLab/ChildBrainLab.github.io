@@ -20,14 +20,16 @@ theme:
         code: Roboto Mono
       logo: assets/logo.jpg
       features:
+      - navigation.tracking
       - navigation.tabs
       - navigation.tabs.sticky
-      - navigation.expand
+      # - navigation.expand
       - navigation.indexes
       - toc.integrate
       - navigation.top
       - tags
       - header.autohide
+      - content.code.annotate
       plugins:
       - search:
         lang: en
