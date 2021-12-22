@@ -1,5 +1,8 @@
 site_name: Laboratory for Child Brain Development
-site_url: https://www.childbrainlab.github.io
+site_url: https://www.childbrainlab.github.io/site/
+repo_url: https://github.com/ChildBrainLab/ChildBrainLab.github.io
+site_description: Pages and walkthroughs intended for getting new lab members set up, documenting different lab-related software, or for writing tutorials.
+site_author: clayton Schneider
 theme:
   name: material
   palette:
@@ -34,3 +37,8 @@ theme:
       plugins:
       - search:
         lang: en
+      nav:
+      - Home: 'index.md'
+      - Setting Up: 'setting_up.md'
+      extra_css:
+      - css/extra.css
