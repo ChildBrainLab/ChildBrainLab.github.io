@@ -1,13 +1,9 @@
-# Welcome to MkDocs
+# Welcome to the LCBD Wiki
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+For information on how this site was automatically generated, visit [mkdocs.org](https://www.mkdocs.org) or view the README on the [GitHub Repository](https://github.com/ChildBrainLab/ChildBrainLab.github.io).
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+# Getting Started
+Use the search tool, or go to any of the pages on the menu bar to find the help, documentation, or tutorial you're looking for.  
 
 ## Project layout
 
