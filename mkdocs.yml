@@ -42,3 +42,5 @@ theme:
       - Setting Up: 'setting_up.md'
       extra_css:
       - css/extra.css
+      markdown_extensions:
+      - markdown.extensions.attr_list
