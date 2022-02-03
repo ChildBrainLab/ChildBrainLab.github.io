@@ -1,4 +1,4 @@
-name: automated deployment of project documentation
+name: automated deployment of an mkdocs project
 
 on:
   push:
