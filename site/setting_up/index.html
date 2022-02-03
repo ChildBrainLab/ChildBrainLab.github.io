@@ -468,17 +468,17 @@
 <li>Once installed, open the App and click "New" at the top to set up a new connection.</li>
 <li>For "PC Name", enter "dynosparky.neuroimage.wustl.edu". Under credentials, enter your NIL username (user camachoc is displayed below as an example). Note that this is NOT your WUSTL ID, this is your NIL login.</li>
 </ol>
-<p><img alt="Mac Remote Desktop Example" src="../assets/setup_rd_mac.png" />{: .center}</p>
+<p><img alt="Mac Remote Desktop Example" src="../assets/setup_rd_mac.png" /></p>
 <ol>
 <li>The other settings can be as you wish. The "Connection Name" is what the connection will be listed as in the App. You may choose to not leave your password entered, in which case you'll be prompted to enter it later. You may choose to check or uncheck the boxes at the bottom that determine how the window appears on your monitor.</li>
 <li>Close the Edit window. The new connection will now be listed in the main window of the app.</li>
 </ol>
-<p><img alt="Mac Remote Desktop Connection" src="../assets/setup_rd_mac_connect.png" />{: .center}</p>
+<p><img alt="Mac Remote Desktop Connection" src="../assets/setup_rd_mac_connect.png" /></p>
 <ol>
 <li>Double click the connection to start. The first time that you connect, the App will ask if you want to trust the server. Click yes.</li>
 <li>If you did NOT enter your password as part of the connection setup, you will see an error message. Click "Ok", then you will see the screen below. Log in with your NIL username and password.</li>
 </ol>
-<p><img alt="Mac Remote Desktop NIL Credentials" src="../assets/setup_rd_mac_NIL.png" />{: .center}</p>
+<p><img alt="Mac Remote Desktop NIL Credentials" src="../assets/setup_rd_mac_NIL.png" /></p>
 <ol>
 <li>Once you are logged in, you should see your desktop, and can proceed to the DynoSparky first-time setup documentation.</li>
 </ol>
@@ -486,11 +486,11 @@
 <ol>
 <li>Search for the "Remote Desktop Connection" default Windows application, and open it.</li>
 </ol>
-<p><img alt="Windows Remote Desktop App" src="../assets/setup_rd_windows.png" />{: .center}</p>
+<p><img alt="Windows Remote Desktop App" src="../assets/setup_rd_windows.png" /></p>
 <ol>
 <li>Once the window opens, click the "Show Options" down-arrow to expand the window. For Computer, enter <code>dynosparky.neuroimage.wustl.edu</code>. For User name, enter your NIL user name. Note that this is NOT the same as your WUSTL login.</li>
 </ol>
-<p><img alt="Windows Remote Desktop NIL Credentials" src="../assets/setup_rd_windows_NIL.png" />{: .center}</p>
+<p><img alt="Windows Remote Desktop NIL Credentials" src="../assets/setup_rd_windows_NIL.png" /></p>
 <ol>
 <li>If you are using a personal computer or account, you can opt to check the "Allow me to save credentials" box to reduce how often you have to log in. You can also click "Save As" and save the Remote Desktop Connection to your desktop to make it quicker to connect in the future.</li>
 <li>Double-click your new connection or click "connect" from within the Remote Desktop Connection App. You will be prompted to log in with your NIL credentials. The first time you log in, you will get a message asking to allow connections with the remote computer, or if you can trust the certificate. For both, click "Yes" or "Allow". You can also check the "Don't ask me about this again on this computer" box to avoid having to give permission again later the next time you log in.</li>
@@ -503,11 +503,11 @@
 <li>Ensure you are connected to the VPN</li>
 <li>Open the Mac Terminal, Windows Command Prompt, or Linux Terminal</li>
 </ol>
-<p><img alt="SSH syntax" src="../assets/setup_ssh.png" />{: .center}</p>
+<p><img alt="SSH syntax" src="../assets/setup_ssh.png" /></p>
 <ol>
 <li>Type <code>ssh -Y NILUSER@dynosparky.neuroimage.wustl.edu</code> and hit ENTER. You should now be prompted to enter your password. Enter your password and hit enter (no *'s will appear, like when you enter a password on a website). It may take a moment to connect.</li>
 </ol>
-<p><img alt="SSH success" src="../assets/setup_ssh_success.png" />{: .center}</p>
+<p><img alt="SSH success" src="../assets/setup_ssh_success.png" /></p>
 <ol>
 <li>If your OS is compatible with X11 forwarding, you may also use the <code>-X</code> flag to allow ssh to display graphical programs on your local computer. This is favored over using Remote Desktop, because the computational resources required to display the program are offloaded from DynoSparky, allowing the server to remain optimized in its role for multiple simultaneous connections. E.g.,</li>
 </ol>
