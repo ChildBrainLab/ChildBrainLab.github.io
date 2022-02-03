@@ -37,7 +37,7 @@ theme:
       plugins:
       - search:
         lang: en
-      nav:
+      pages:
       - Home: 'index.md'
       - Setting Up: 'setting_up.md'
       extra_css:
