@@ -1,12 +1,14 @@
 site_name: Laboratory for Child Brain Development
 site_url: https://www.childbrainlab.github.io/site/
 repo_url: https://github.com/ChildBrainLab/ChildBrainLab.github.io
+edit_uri: edit/main/docs/
 site_description: Pages and walkthroughs intended for getting new lab members set up, documenting different lab-related software, or for writing tutorials.
 site_author: Clayton Schneider
 site_dir: 'site'
 theme:
   name: material
-  custom_dir: overrides
+  logo: assets/logo.jpg
+  # custom_dir: overrides
   palette:
     - scheme: default
       toggle:
@@ -20,29 +22,28 @@ theme:
         name: Switch to light mode
       primary: light blue
       accent: amber
-      font:
-        text: Roboto
-        code: Roboto Mono
-      logo: assets/logo.jpg
-      features:
-      - navigation.instant
-      - navigation.tracking
-      - navigation.tabs
-      - navigation.tabs.sticky
-      # - navigation.expand
-      - navigation.indexes
-      - toc.integrate
-      - navigation.top
-      - tags
-      - header.autohide
-      - content.code.annotate
-      plugins:
-      - search:
-        lang: en
-      pages:
-      - Home: 'index.md'
-      - Setting Up: 'setting_up.md'
-      extra_css:
-      - stylesheets/extra.css
-      markdown_extensions:
-      - markdown.extensions.attr_list
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+  - navigation.instant
+  - navigation.tracking
+  # - navigation.tabs
+  # - navigation.tabs.sticky
+  - navigation.expand
+  - navigation.indexes
+  # - toc.integrate
+  - navigation.top
+  - tags
+  - header.autohide
+  - content.code.annotate
+  plugins:
+  - search:
+    lang: en
+  nav:
+  - Home: 'index.md'
+  - Setting Up: 'setting_up.md'
+  extra_css:
+  - stylesheets/extra.css
+  markdown_extensions:
+  - markdown.extensions.attr_list
