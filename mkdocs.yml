@@ -44,7 +44,7 @@ theme:
     lang: en
   nav:
   - Home: 'index.md'
-  - 'Setting Up': 'setting_up.md'
+  - Setting Up: 'setting_up.md'
   - Walkthroughs:
       - 'Linux and Command-Line Basics': 'linux_wt.md'
   extra_css:
