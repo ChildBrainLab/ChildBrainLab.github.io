@@ -8,6 +8,8 @@ site_dir: 'site'
 theme:
   name: material
   logo: assets/logo.jpg
+  icon:
+    repo: fontawesome/brands/github
   # custom_dir: overrides
   palette:
     - scheme: default
@@ -42,7 +44,9 @@ theme:
     lang: en
   nav:
   - Home: 'index.md'
-  - Setting Up: 'setting_up.md'
+  - 'Setting Up': 'setting_up.md'
+  - Walkthroughs:
+      - 'Linux and Command-Line Basics': 'linux_wt.md'
   extra_css:
   - stylesheets/extra.css
   markdown_extensions:
