@@ -47,7 +47,7 @@ cp --help
 
 These are just a few and some of the most powerful / common of many built-in commands.
 
-## Environment
+## Software Environment
 ### C Shell Configuration File
 `.cshrc` is a file that is executed each time you execute a new shell (i.e., each time you log in, open a new Remote Desktop session or Xterm window). [.cshrc Docs](https://www.doc.ic.ac.uk/csg-old/linux/Cshrc.html)
 
@@ -58,3 +58,14 @@ E.g., if you're constantly using the command `ls -l` instead of regular `ls`, an
 alias l 'ls -l'
 ```
 Then after either relaunching a session, or running `source ~/.cshrc` to load the file, you can use `l` in lieu of `ls -l`.
+
+### Virtual Environments
+#### venv
+#### anaconda
+
+### Docker
+Docker is a software we have access to on DynoSparky, which allows us to build, run, and store "containers". Many software for data analysis are offered via Docker containers, which are packaged applications that make the execution of the software much more straightforward and consistent.
+
+For example, when the latest releases of MRIQC, FMRIPREP, and LCBD scripts all rely on different versions of the PyDicom package, a Docker container works as a solution. In the figure below, Docker containers are represented on the left, and virutal machines on the right.
+
+![Docker vs Virtual Machines](assets/linux_Docker-vs-virtual-machines.png)
