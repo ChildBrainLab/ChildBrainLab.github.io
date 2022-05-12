@@ -1,6 +1,6 @@
 # Getting Set Up in the LCBD
 
-## Setting Up Compute and Storage Resources
+## Setting Up LCBD Compute and Storage Resources
 The lab uses two integrated servers, DynoSparky for processing and Moochie for storage. The server can only be accessed via the WUSTL network, so you must use the [Medical School VPN](https://cpb-us-w2.wpmucdn.com/sites.wustl.edu/dist/5/1185/files/2018/04/vpn-Windows-MED-new.pdf) to access DynoSparky from off campus.
 
 Moochie is mapped to `/data/perlman/moochie` on DynoSparky.
@@ -58,7 +58,7 @@ On any operating system, you can connect to DynoSparky using SSH.
 
 ![SSH syntax](assets/setup_ssh.png)
 
-3. Type `ssh -Y NILUSER@dynosparky.neuroimage.wustl.edu` and hit ENTER. You should now be prompted to enter your password. Enter your password and hit enter (no *'s will appear, like when you enter a password on a website). It may take a moment to connect.
+3. Type `ssh -Y NILUSER@dynosparky.neuroimage.wustl.edu` and hit ENTER. You should now be prompted to enter your password. Enter your password and hit enter (no asterisks will appear, like when you enter a password on a website). It may take a moment to connect.
 
 ![SSH success](assets/setup_ssh_success.png)
 
@@ -120,3 +120,8 @@ echo "set path = ( $path /home/usr/$USER/bin )" >> ~/.cshrc
 ```
 echo "addpath(genpath('/'))" # comment
 ```
+
+## Setting Up with Wash U's Center for High Performance Computing
+In addition to the computational resources managed by NIL, we have access to resources managed by the Mallinckrodt Institute of Radiology's [Center for High Performance Computing](https://www.mir.wustl.edu/research/core-resources/center-for-high-performance-computing/). Keep in mind - this is a computing system fully distinct from the NIL resources, including DynoSparky and Moochie, and is structurally an entirely different animal. Whereas DynoSparky is a self-contained server we explicitly use, CHPC is a [computer cluster](https://en.wikipedia.org/wiki/Computer_cluster), meaning hundreds of computers are linked together to be used in parallel by many users running many different processes at once. Jobs are also not instantaneous, but rather submitted to a job queue, [SLURM](https://slurm.schedmd.com/documentation.html), and run in large batches concurrently, parellized so that, for example, each subject's processing has its own dedicated CPU. This is typically how large neuroimaging analysis jobs are  run in reasonable amounts of time. This level of parallelization is not possible on DynoSparky, though it is itself a powerful computer - HPC is like having a hundred DynoSparky's for a couple hours. 
+
+The MIR's HPC system is dedicated to in-vivo imaging, and currently we are allowed access through the Psychiatry Department. To request an account, you'll need to have completed your HIPAA training through [Learn@Work](http://www.learnatwork.wustl.edu/), after which you can submit an application [here](https://sites.wustl.edu/chpc/for-users/account-request/). Once accepted, familiarize yourself with the [Rules and Guidelines](https://sites.wustl.edu/chpc/for-users/rules-and-guidelines/) for accessing CHPC - there are many more nuances to computing through this system, and you should not jump in without being highly familiar with Unix systems, the SLURM job queue, and awareness of the rescrictions and relevant quotas. 
