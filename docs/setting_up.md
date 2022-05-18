@@ -21,28 +21,28 @@ Remote desktop takes advantage of Xubuntu to provide a graphical interface for n
  2. Once installed, open the App and click "New" at the top to set up a new connection.
  3. For "PC Name", enter "dynosparky.neuroimage.wustl.edu". Under credentials, enter your NIL username (user camachoc is displayed below as an example). Note that this is NOT your WUSTL ID, this is your NIL login - they are separate credentials.
 
-![Mac Remote Desktop Example](assets/setup_rd_mac.png)
+    ![Mac Remote Desktop Example](assets/setup_rd_mac.png)
 
  4. The other settings can be as you wish. The "Connection Name" is what the connection will be listed as in the App. You may choose to not leave your password entered, in which case you'll be prompted to enter it later. You may choose to check or uncheck the boxes at the bottom that determine how the window appears on your monitor.
  5. Close the Edit window. The new connection will now be listed in the main window of the app.
 
-![Mac Remote Desktop Connection](assets/setup_rd_mac_connect.png)
+    ![Mac Remote Desktop Connection](assets/setup_rd_mac_connect.png)
 
  6. Double click the connection to start. The first time that you connect, the App will ask if you want to trust the server. Click yes.
  7. If you did NOT enter your password as part of the connection setup, you will see an error message. Click "Ok", then you will see the screen below. Log in with your NIL username and password.
 
-![Mac Remote Desktop NIL Credentials](assets/setup_rd_mac_NIL.png)
+    ![Mac Remote Desktop NIL Credentials](assets/setup_rd_mac_NIL.png)
 
  8. Once you are logged in, you should see your desktop, and can proceed to the DynoSparky first-time setup documentation.
 
 #### For Windows Users:
  1. Search for the "Remote Desktop Connection" default Windows application, and open it.
 
-![Windows Remote Desktop App](assets/setup_rd_windows.png)
+    ![Windows Remote Desktop App](assets/setup_rd_windows.png)
 
  2. Once the window opens, click the "Show Options" down-arrow to expand the window. For Computer, enter `dynosparky.neuroimage.wustl.edu`. For User name, enter your NIL user name. Note that this is NOT the same as your WUSTL login.
 
-![Windows Remote Desktop NIL Credentials](assets/setup_rd_windows_NIL.png)
+    ![Windows Remote Desktop NIL Credentials](assets/setup_rd_windows_NIL.png)
 
  3. If you are using a personal computer or account, you can opt to check the "Allow me to save credentials" box to reduce how often you have to log in. You can also click "Save As" and save the Remote Desktop Connection to your desktop to make it quicker to connect in the future.
  4. Double-click your new connection or click "connect" from within the Remote Desktop Connection App. You will be prompted to log in with your NIL credentials. The first time you log in, you will get a message asking to allow connections with the remote computer, or if you can trust the certificate. For both, click "Yes" or "Allow". You can also check the "Don't ask me about this again on this computer" box to avoid having to give permission again later the next time you log in.
@@ -56,16 +56,17 @@ On any operating system, you can connect to DynoSparky using SSH.
  1. Ensure you are connected to the VPN
  2. Open the Mac Terminal, Windows Command Prompt, or Linux Terminal
 
-![SSH syntax](assets/setup_ssh.png)
+    ![SSH syntax](assets/setup_ssh.png)
 
  3. Type `ssh -Y NILUSER@dynosparky.neuroimage.wustl.edu` and hit ENTER. You should now be prompted to enter your password. Enter your password and hit enter (no asterisks will appear, like when you enter a password on a website). It may take a moment to connect.
 
-![SSH success](assets/setup_ssh_success.png)
+    ![SSH success](assets/setup_ssh_success.png)
 
  4. If your OS is compatible with X11 forwarding, you may also use the `-X` flag to allow ssh to display graphical programs on your local computer. This is favored over using Remote Desktop, because the computational resources required to display the program are offloaded from DynoSparky, allowing the server to remain optimized in its role for multiple simultaneous connections. On Mac, you may need to first install [XQuarts](https://www.xquartz.org/). E.g.,
-```
-ssh -X NILUSER@dynosparky.neuroimage.wustl.edu
-```
+
+    ```
+    ssh -X NILUSER@dynosparky.neuroimage.wustl.edu
+    ```
 
 ## Setting Up for the First Time on DynoSparky
 The first time you log in, you'll need to make some modifications. It will be useful first to review the Command Line Help and Tips section. A great deal can be accomplished through the use of even just a few Bash commands, and it *will* save you time and energy to have them at your disposal.
@@ -80,46 +81,52 @@ The "." at the start of the filename indicates that it is a *hidden* file, a lit
 LCBD members have compiled the most ubiquitous commands and shortcuts into a template .cshrc, which you can import to your own. The template cshrc file sets up the OS, as well as some PATH and environment variables which allow your user profile to recognize shared lab software packages, such as FSL and FreeSurfer. To merge it with your personal .cshrc (located in ~/.cshrc):
 
  1. Enter the following command:
-```
-echo /data/perlman/moochie/user_data/cshrc.txt >> ~/.cshrc
-```
+
+    ```
+    echo /data/perlman/moochie/user_data/cshrc.txt >> ~/.cshrc
+    ```
 
 This will append the contents of the template cshrc file to your personal configuration, `~/.cshrc`. NOTE: it is pertinent that you use `>>` and not `>` (two carats). `>>` appends to a file, whereas `>` writes the file out from scratch.
 
  2. After making changes to cshrc, they are not automatically loaded. Your csh configuratino file is only loaded once a new connection is made. Alternatively, you can force a refresh with:
-```
-source ~/.cshrc
-```
+
+    ```
+    source ~/.cshrc
+    ```
 
 You may notice that this same `source` command is used to configure much of the LCBD environment. E.g., to load the LCBD virtual environment, you could enter:
-```
-source /data/perlman/moochie/resources/server_access/MRI_env/bin/activate.csh
-```
+
+    ```
+    source /data/perlman/moochie/resources/server_access/MRI_env/bin/activate.csh
+    ```
 
 or alternatively, the equivalent "alias" which was injected from the cshrc template:
-```
-sourceLCBD
-```
+
+    ```
+    sourceLCBD
+    ```
 
 ### MATLAB Setup
 The lab uses a shared MATLAB installation.
 
  1. To access easily, you can create a "soft link" or "symbolic link" to the program location.
-```
-ln -s /usr/local/pkg/MATLAB/R2019b/bin/matlab ./matlab
-```
+
+    ```
+    ln -s /usr/local/pkg/MATLAB/R2019b/bin/matlab ./matlab
+    ```
 
  2. Add your new "bin" folder to your path, so it is automatically recognized as a source of available software.
-```
-echo "set path = ( $path /home/usr/$USER/bin )" >> ~/.cshrc
-```
+
+    ```
+    echo "set path = ( $path /home/usr/$USER/bin )" >> ~/.cshrc
+    ```
 
  3. Add the lab's shared MATLAB toolboxes to your MATLAB startup file, so they are automatically recognized by MATLAB on boot.
 
-***TODO***
-```
-echo "addpath(genpath('/'))" # comment
-```
+    ***TODO***
+    ```
+    echo "addpath(genpath('/'))" # comment
+    ```
 
 ## Setting Up with Wash U's Center for High Performance Computing
 In addition to the computational resources managed by NIL, we have access to resources managed by the Mallinckrodt Institute of Radiology's [Center for High Performance Computing](https://www.mir.wustl.edu/research/core-resources/center-for-high-performance-computing/). Keep in mind - this is a computing system fully distinct from the NIL resources, including DynoSparky and Moochie, and is structurally an entirely different animal. Whereas DynoSparky is a self-contained server we explicitly use, CHPC is a [computer cluster](https://en.wikipedia.org/wiki/Computer_cluster), meaning hundreds of computers are linked together to be used in parallel by many users running many different processes at once. Jobs are also not instantaneous, but rather submitted to a job queue, [SLURM](https://slurm.schedmd.com/documentation.html), and run in large batches concurrently, parellized so that, for example, each subject's processing has its own dedicated CPU. This is typically how large neuroimaging analysis jobs are  run in reasonable amounts of time. This level of parallelization is not possible on DynoSparky, though it is itself a powerful computer - HPC is like having a hundred DynoSparky's for a couple hours. 
@@ -130,16 +137,19 @@ For any lingering questions regarding CHPC, you can visit the [FAQ page](https:/
 
 ### Connecting to CHPC
 Once your account request has been accepted, you can access CHPC. To access via a 'login node' via SSH, you will use the following syntax:
-```
-ssh -Y <wustl_key>@login3.chpc.wustl.edu
-``` 
+
+    ```
+    ssh -Y <wustl_key>@login3.chpc.wustl.edu
+    ``` 
+
 and enter your WUSTL key password to complete authentication. 
 
 Note: login3 is the alias for the "3rd gen" of login nodes used by CHPC. These will connect you "round-robin" to the two login nodes, login3-01 and login3-02. Use of login2 or login1 are deprecated and will lead you to encounter problems. 
 
 To view your disk quotas on CHPC, enter the following command:
-```
-check_quota
-```
+
+    ```
+    check_quota
+    ```
 
 To view the job queue, you can enter `squeue` or `squeue -u wustlID` to view only the jobs you've submitted.
