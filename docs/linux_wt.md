@@ -12,6 +12,8 @@ E.g, you can use the `--help` option, which nearly every command has, to query t
 cp --help
 ```
 
+You can think of every command like a shortcut - the actual functionality of the command is located in code elsewhere from your 'current location' on DynoSparky - but by evoking its name you request that code to be executed. You  
+
 ## Cheat Sheet
 
 | Command | Description |
@@ -61,6 +63,8 @@ Then after either relaunching a session, or running `source ~/.cshrc` to load th
 
 ### Virtual Environments
 #### venv
+One important environment we make use of in the LCBD is [venv](https://docs.python.org/3/library/venv.html). Like other systems, such as [anaconda](https://www.anaconda.com/), a virtual env
+
 #### anaconda
 
 ### Docker
