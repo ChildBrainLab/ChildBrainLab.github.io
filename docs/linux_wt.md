@@ -12,7 +12,7 @@ E.g, you can use the `--help` option, which nearly every command has, to query t
 cp --help
 ```
 
-You can think of every command like a shortcut - the actual functionality of the command is located in code elsewhere from your 'current location' on DynoSparky - but by evoking its name you request that code to be executed. You  
+You can think of every command like a shortcut - the actual functionality of the command is located in code elsewhere from your 'current location' on DynoSparky - but by evoking its name you request that code to be executed. If you are entirely new to Unix, you may find Andrew Jahn's [Unix for Neuroimagers](https://andysbrainbook.readthedocs.io/en/latest/unix/Unix_Intro.html) to be an extremely comprehensive resource.  
 
 ## Cheat Sheet
 
