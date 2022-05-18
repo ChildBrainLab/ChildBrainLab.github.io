@@ -62,7 +62,7 @@ On any operating system, you can connect to DynoSparky using SSH.
 
 ![SSH success](assets/setup_ssh_success.png)
 
-4. If your OS is compatible with X11 forwarding, you may also use the `-X` flag to allow ssh to display graphical programs on your local computer. This is favored over using Remote Desktop, because the computational resources required to display the program are offloaded from DynoSparky, allowing the server to remain optimized in its role for multiple simultaneous connections. E.g.,
+4. If your OS is compatible with X11 forwarding, you may also use the `-X` flag to allow ssh to display graphical programs on your local computer. This is favored over using Remote Desktop, because the computational resources required to display the program are offloaded from DynoSparky, allowing the server to remain optimized in its role for multiple simultaneous connections. On Mac, you may need to first install [XQuarts](https://www.xquartz.org/). E.g.,
 ```
 ssh -X NILUSER@dynosparky.neuroimage.wustl.edu
 ```
