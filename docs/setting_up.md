@@ -137,3 +137,9 @@ and enter your WUSTL key password to complete authentication.
 
 Note: login3 is the alias for the "3rd gen" of login nodes used by CHPC. These will connect you "round-robin" to the two login nodes, login3-01 and login3-02. Use of login2 or login1 are deprecated and will lead you to encounter problems. 
 
+To view your disk quotas on CHPC, enter the following command:
+```
+check_quota
+```
+
+To view the job queue, you can enter `squeue` or `squeue -u wustlID` to view only the jobs you've submitted.
