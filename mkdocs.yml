@@ -45,8 +45,7 @@ theme:
     lang: en
 nav:
 - Home: 'index.md'
-- Setting Up:
-  - 'setting_up/setting_up.md'
+- Setting Up: 'setting_up/setting_up.md'
   - DynoSparky: 'setting_up/DynoSparky.md'
   - Moochie: 'setting_up/Moochie.md'
   - CHPC: 'setting_up/CHPC.md'
