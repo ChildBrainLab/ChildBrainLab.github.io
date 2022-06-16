@@ -44,9 +44,13 @@ theme:
     lang: en
   nav:
   - Home: 'index.md'
-  - Setting Up: 'setting_up.md'
+  - Setting Up:
+    - 'setting_up/setting_up.md'
+    - DynoSparky: 'setting_up/DynoSparky.md'
+    - Moochie: 'setting_up/Moochie.md'
+    - CHPC: 'setting_up/CHPC.md'
   - Walkthroughs:
-      - 'Linux and Command-Line Basics': 'linux_wt.md'
+    - 'Linux / Command-Line': 'tutorials/linux_wt.md'
   extra_css:
   - stylesheets/extra.css
   markdown_extensions:

@@ -12,6 +12,7 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
-      - run: pip3 install mkdocs-material
+      - run: pip install mkdocs-material
         # - run: mkdocs build -c -t material
-      - run: mkdocs gh-deploy -c -b gh-pages -f mkdocs.yml --force
+      # - run: mkdocs gh-deploy -c -b gh-pages -f mkdocs.yml --force
+      - run: mkdocs gh-deploy --force
