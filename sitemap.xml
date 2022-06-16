@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://www.childbrainlab.github.io/site/</loc>
+         <lastmod>2022-06-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.childbrainlab.github.io/site/setting_up/CHPC/</loc>
+         <lastmod>2022-06-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.childbrainlab.github.io/site/setting_up/DynoSparky/</loc>
+         <lastmod>2022-06-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.childbrainlab.github.io/site/setting_up/Moochie/</loc>
+         <lastmod>2022-06-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.childbrainlab.github.io/site/setting_up/setting_up/</loc>
+         <lastmod>2022-06-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.childbrainlab.github.io/site/tutorials/linux_wt/</loc>
+         <lastmod>2022-06-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
