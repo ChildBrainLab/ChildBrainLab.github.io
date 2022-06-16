@@ -42,7 +42,7 @@ features:
 - content.code.annotate
 plugins:
 - search:
-  - lang: en
+  lang: en
 nav:
 - Home: 'index.md'
 - Setting Up:
