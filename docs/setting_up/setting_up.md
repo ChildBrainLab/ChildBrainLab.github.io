@@ -1,6 +1,3 @@
-# Getting Set Up in the LCBD
-
-## Setting Up LCBD Compute and Storage Resources
 The lab uses two integrated servers, DynoSparky for processing and Moochie for storage. The server can only be accessed via the WUSTL network, so you must use the [Medical School VPN](https://cpb-us-w2.wpmucdn.com/sites.wustl.edu/dist/5/1185/files/2018/04/vpn-Windows-MED-new.pdf) to access DynoSparky from off campus.
 
 Moochie is mapped to a path, `/data/perlman/moochie`, on DynoSparky.
