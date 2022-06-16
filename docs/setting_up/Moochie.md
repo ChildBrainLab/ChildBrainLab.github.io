@@ -1,6 +1,6 @@
 Moochie is the storage component of the lab's computational resources managed through CSG. Access will vary depending on your location:
 
-# On Campus:
+# On Campus
 On a lab PC (5th or 6th floor of 4444), once you are logged in with your NIL account:
 
 1. Open File Explorer
@@ -12,10 +12,10 @@ On a lab PC (5th or 6th floor of 4444), once you are logged in with your NIL acc
 
 Moochie will now display as a mounted network location on your lab PC. You will have to repeat this setup process on any new PCs you use.
 
-# Off Campus:
+# Off Campus
 Make sure you are connected to the VPN before proceeding! Once you are:
 
-## On Mac:
+## On Mac
 1. Open Finder
 2. Press command + K or click Go -> Connect to server on menu bar
 3. Enter "smb:\\10.20.145.33\moochie" and click "Connect"
@@ -25,7 +25,7 @@ Make sure you are connected to the VPN before proceeding! Once you are:
 
 To disconnect, click the eject button next to the server address on the Finder sidebar.
 
-## On Linux:
+## On Linux
 ```
 sudo sshfs -o allow_other NILUSER@dynosparky.neuroimage.wustl.edu:/data/perlman/moochie /path/to/mount/to
 ```

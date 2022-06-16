@@ -22,7 +22,7 @@ Remote desktop takes advantage of Xubuntu to provide a graphical interface for n
 
 8. Once you are logged in, you should see your desktop, and can proceed to the DynoSparky first-time setup documentation.
 
-## For Windows Users:
+## For Windows Users
 1. Search for the "Remote Desktop Connection" default Windows application, and open it.
 
     ![Windows Remote Desktop App](../assets/setup_rd_windows.png)
