@@ -8,28 +8,28 @@ Remote desktop takes advantage of Xubuntu to provide a graphical interface for n
 2. Once installed, open the App and click "New" at the top to set up a new connection.
 3. For "PC Name", enter "dynosparky.neuroimage.wustl.edu". Under credentials, enter your NIL username (user camachoc is displayed below as an example). Note that this is NOT your WUSTL ID, this is your NIL login - they are separate credentials.
 
-    ![Mac Remote Desktop Example](assets/setup_rd_mac.png)
+    ![Mac Remote Desktop Example](../assets/setup_rd_mac.png)
 
 4. The other settings can be as you wish. The "Connection Name" is what the connection will be listed as in the App. You may choose to not leave your password entered, in which case you'll be prompted to enter it later. You may choose to check or uncheck the boxes at the bottom that determine how the window appears on your monitor.
 5. Close the Edit window. The new connection will now be listed in the main window of the app.
 
-    ![Mac Remote Desktop Connection](assets/setup_rd_mac_connect.png)
+    ![Mac Remote Desktop Connection](../assets/setup_rd_mac_connect.png)
 
 6. Double click the connection to start. The first time that you connect, the App will ask if you want to trust the server. Click yes.
 7. If you did NOT enter your password as part of the connection setup, you will see an error message. Click "Ok", then you will see the screen below. Log in with your NIL username and password.
 
-    ![Mac Remote Desktop NIL Credentials](assets/setup_rd_mac_NIL.png)
+    ![Mac Remote Desktop NIL Credentials](../assets/setup_rd_mac_NIL.png)
 
 8. Once you are logged in, you should see your desktop, and can proceed to the DynoSparky first-time setup documentation.
 
 ## For Windows Users:
 1. Search for the "Remote Desktop Connection" default Windows application, and open it.
 
-    ![Windows Remote Desktop App](assets/setup_rd_windows.png)
+    ![Windows Remote Desktop App](../assets/setup_rd_windows.png)
 
 2. Once the window opens, click the "Show Options" down-arrow to expand the window. For Computer, enter `dynosparky.neuroimage.wustl.edu`. For User name, enter your NIL user name. Note that this is NOT the same as your WUSTL login.
 
-    ![Windows Remote Desktop NIL Credentials](assets/setup_rd_windows_NIL.png)
+    ![Windows Remote Desktop NIL Credentials](../assets/setup_rd_windows_NIL.png)
 
 3. If you are using a personal computer or account, you can opt to check the "Allow me to save credentials" box to reduce how often you have to log in. You can also click "Save As" and save the Remote Desktop Connection to your desktop to make it quicker to connect in the future.
 4. Double-click your new connection or click "connect" from within the Remote Desktop Connection App. You will be prompted to log in with your NIL credentials. The first time you log in, you will get a message asking to allow connections with the remote computer, or if you can trust the certificate. For both, click "Yes" or "Allow". You can also check the "Don't ask me about this again on this computer" box to avoid having to give permission again later the next time you log in.
@@ -43,11 +43,11 @@ On any operating system, you can connect to DynoSparky using SSH.
 1. Ensure you are connected to the VPN
 2. Open the Mac Terminal, Windows Command Prompt, or Linux Terminal
 
-    ![SSH syntax](assets/setup_ssh.png)
+    ![SSH syntax](../assets/setup_ssh.png)
 
 3. Type `ssh -Y NILUSER@dynosparky.neuroimage.wustl.edu` and hit ENTER. You should now be prompted to enter your password. Enter your password and hit enter (no asterisks will appear, like when you enter a password on a website). It may take a moment to connect.
 
-    ![SSH success](assets/setup_ssh_success.png)
+    ![SSH success](../assets/setup_ssh_success.png)
 
 4. If your OS is compatible with X11 forwarding, you may also use the `-X` flag to allow ssh to display graphical programs on your local computer. This is favored over using Remote Desktop, because the computational resources required to display the program are offloaded from DynoSparky, allowing the server to remain optimized in its role for multiple simultaneous connections. On Mac, you may need to first install [XQuarts](https://www.xquartz.org/). E.g.,
 
