@@ -27,31 +27,32 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  features:
-  - navigation.instant
-  - navigation.tracking
-  # - navigation.tabs
-  # - navigation.tabs.sticky
-  - navigation.expand
-  - navigation.indexes
-  # - toc.integrate
-  - navigation.top
-  - tags
-  - header.autohide
-  - content.code.annotate
-  plugins:
-  - search:
-    lang: en
-  nav:
-  - Home: 'index.md'
-  - Setting Up:
-    - 'setting_up/setting_up.md'
-    - DynoSparky: 'setting_up/DynoSparky.md'
-    - Moochie: 'setting_up/Moochie.md'
-    - CHPC: 'setting_up/CHPC.md'
-  - Walkthroughs:
-    - 'Linux / Command-Line': 'tutorials/linux_wt.md'
-  extra_css:
-  - stylesheets/extra.css
-  markdown_extensions:
-  - markdown.extensions.attr_list
+features:
+- navigation.instant
+- navigation.tracking
+- navigation.sections
+# - navigation.tabs
+# - navigation.tabs.sticky
+- navigation.expand
+- navigation.indexes
+# - toc.integrate
+- navigation.top
+- tags
+- header.autohide
+- content.code.annotate
+plugins:
+- search:
+  lang: en
+nav:
+- Home: 'index.md'
+- Setting Up:
+  - 'setting_up/setting_up.md'
+  - DynoSparky: 'setting_up/DynoSparky.md'
+  - Moochie: 'setting_up/Moochie.md'
+  - CHPC: 'setting_up/CHPC.md'
+- Tutorials:
+  - 'Linux / Command-Line': 'tutorials/linux_wt.md'
+extra_css:
+- stylesheets/extra.css
+markdown_extensions:
+- markdown.extensions.attr_list
