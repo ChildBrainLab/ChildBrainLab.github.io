@@ -1,0 +1,12 @@
+# Getting Set Up in the LCBD
+
+## Setting Up LCBD Compute and Storage Resources
+The lab uses two integrated servers, DynoSparky for processing and Moochie for storage. The server can only be accessed via the WUSTL network, so you must use the [Medical School VPN](https://cpb-us-w2.wpmucdn.com/sites.wustl.edu/dist/5/1185/files/2018/04/vpn-Windows-MED-new.pdf) to access DynoSparky from off campus.
+
+Moochie is mapped to a path, `/data/perlman/moochie`, on DynoSparky.
+
+DynoSparky runs the XFCE flavor of Ubuntu (a Linux OS distribution) known as Xubuntu. Any Ubuntu software will work just fine, but we also get the added benefit of XFCE's sleek interface, and graphical interfaces.
+
+Lab members do not have access to DynoSparky by default. Each user must be individually added, so ask Amanda if you need to be added.
+
+All of our computational resources (experiment and office PCs, DynoSparky, Moochie, VPN) are managed by the [Computer Support Group](https://research.wustl.edu/core-facilities/computer-support-group/), a sub-group of the [Neuroimaging Labs Research Center](https://www.mir.wustl.edu/research/research-centers/neuroimaging-labs-research-center-nil-rc/). CSG can be contacted via email at [nil-systems@npg.wustl.edu](nil-systems@npg.wustl.edu), but understand that they attend to nearly 70 different Linux systems, and are under extreme demand. Since the organization of NIL and CSG, as well as the resources they encompass can be a bit daunting, Timothy Brown was kind enough to produce [Using Neuro-Imaging Laboratory (NIL) Resources to Store, Preprocess, and Analyze fMRI Data](https://cpb-us-w2.wpmucdn.com/sites.wustl.edu/dist/e/952/files/2017/09/using_nil_resources_to_store_preprocess_and_analyze_fmri_data-1p8sv3c.pdf), which details the entire operation quite nicely - it's recommended that new lab members familiarize themselves with the resources discussed in this document, while also understanding that the exact usage of the computational resources may vary according to need within the LCBD.  
