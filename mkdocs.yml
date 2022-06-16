@@ -27,22 +27,22 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-features:
-- navigation.instant
-- navigation.tracking
-- navigation.sections
-# - navigation.tabs
-# - navigation.tabs.sticky
-- navigation.expand
-- navigation.indexes
-# - toc.integrate
-- navigation.top
-- tags
-- header.autohide
-- content.code.annotate
-plugins:
-- search:
-  lang: en
+  features:
+  - navigation.instant
+  - navigation.tracking
+  - navigation.sections
+  # - navigation.tabs
+  # - navigation.tabs.sticky
+  - navigation.expand
+  - navigation.indexes
+  # - toc.integrate
+  - navigation.top
+  - tags
+  - header.autohide
+  - content.code.annotate
+  plugins:
+  - search:
+    lang: en
 nav:
 - Home: 'index.md'
 - Setting Up:
