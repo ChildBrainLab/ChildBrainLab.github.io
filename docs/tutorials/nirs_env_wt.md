@@ -1,9 +1,11 @@
 The LCBD's fNIRS processing is performed on DynoSparky in a Jupyter Notebook (IPython) environment. If you haven't yet connected to DynoSparky, see [the DynoSparky tutorial](../../setting_up/DynoSparky.md) for steps on starting an SSH connection.
 
 This environment was selected for a few reasons:
+
 - the computations happen on DynoSparky's resources, meaning your local PC or laptop won't be bogged down
 - longer computations can run in the background on the Jupyter server for hours, or even days, without dropping
 - the implementation of a [virtual environment](https://docs.python.org/3/library/venv.html) means that every user can instantly acquire all of the dependency packages that fNIRS analysis relies on, such as:
+
   - [numpy](https://numpy.org/)
   - [pandas](https://pandas.pydata.org/)
   - [MNE](https://mne.tools/stable/index.html)
