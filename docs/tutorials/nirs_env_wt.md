@@ -12,7 +12,7 @@ This environment was selected for a few reasons:
   - and more
 - moreover, the exact versions of these dependency packages are maintained across users ensuring consistent results
 
-The process for starting and connecting to a server is a bit lengthy, but is streamlined by the use of some helpful bash scripts. The full proceedings are as follows:
+The process for starting and connecting to a server is a bit lengthy, but is streamlined by the use of some helpful bash scripts. Note that you must be either connected to the VPN or on WUSTL internat. The full proceedings are as follows:
 1. Load the virtual environment, giving access to Jupyter and all of the dependencies
 2. Launch a Jupyter Notebook server (from DynoSparky) on a specific port
 3. Open an SSH tunnel to that port of DynoSparky on your local machine
