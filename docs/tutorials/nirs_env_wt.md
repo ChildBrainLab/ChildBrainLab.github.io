@@ -1,4 +1,4 @@
-The LCBD's fNIRS processing is performed on DynoSparky in a Jupyter Notebook (IPython) environment. If you haven't yet connected to DynoSparky, see [the DynoSparky tutorial](../../setting_up/DynoSparky) for steps on starting an SSH connection.
+The LCBD's fNIRS processing is performed on DynoSparky in a Jupyter Notebook (IPython) environment. If you haven't yet connected to DynoSparky, see [the DynoSparky tutorial](https://childbrainlab.github.io/setting_up/DynoSparky/) for steps on starting an SSH connection.
 
 This environment was selected for a few reasons:
 
