@@ -38,10 +38,20 @@ where the port number is an integer between 9000 and 9999. Ideally, each lab mem
 - 9999
 - 9001
 
-If run successfully, script will output the exact details for the next steps. The DynoSparky side of things is done, and the SSH command it prints out is to be run on a new, local terminal. 
+If run successfully, script will output the exact details for the next steps. The DynoSparky side of things is done, and the SSH command it prints out is to be run on a **local** terminal, as shown below.
+
+  ![ssh tunnel](../assets/shh-tunneling.png)
 
 Once you've entered the SSH command it gives you, you can open a web browser (any should be fine) and navigate to the URL, localhost:8888, where you should find the Jupyter web page. 
 
-If this is your first time connecting from that computer, you may need an access token. If so, you can find the token in the output of the startJupyterServer.sh script, in the URL, following the phrase, "token=". Copy this string of characters and paste it into the 'password' field.
+  ![Jupyter land](../assets/jupyter-land.png)
 
-Then you should be good to go!
+If this is your first time connecting from that computer, you may be prompted for a password. If so, you can find the token in the output of the startJupyterServer.sh script, in the URL, following the phrase, "token=". Copy this string of characters and paste it into the 'password' field.
+
+Note: you may need to tell Jupyter that you specifically want to use the NIRS environment (located at `/data/perlman/moochie/resources/server_access/NIRSenv`). When you have a notebook open, Jupyter tells you which kernel it is using in the upper right of the page:
+
+  ![kernel highlight](../assets/kernel-highlight.png)
+  
+You can click this to change the kernel to the NIRSenv so that you have access to all of the required dependencies.
+
+  ![kernel select](../assets/kernel-select.png)
