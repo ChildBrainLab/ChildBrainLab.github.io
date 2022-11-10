@@ -90,13 +90,11 @@ LCBD members have compiled the most ubiquitous commands and shortcuts into a tem
 
 1. Enter the following command:
 
-
-    echo /data/perlman/moochie/user_data/cshrc.txt >> ~/.cshrc
+       echo /data/perlman/moochie/user_data/cshrc.txt >> ~/.cshrc
 
 
 This will append the contents of the template cshrc file to your personal configuration, `~/.cshrc`. NOTE: it is pertinent that you use `>>` and not `>` (two carats). `>>` appends to a file, whereas `>` writes the file out from scratch.
 
 2. After making changes to cshrc, they are not automatically loaded. Your csh configuratino file is only loaded once a new connection is made. Alternatively, you can force a refresh with:
 
-
-    source ~/.cshrc
+       source ~/.cshrc
