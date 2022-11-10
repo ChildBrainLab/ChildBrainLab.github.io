@@ -74,7 +74,9 @@ On any operating system, you can connect to DynoSparky using SSH.
 
 4. If your OS is compatible with X11 forwarding, you may also use the `-X` flag to allow ssh to display graphical programs on your local computer. This is favored over using Remote Desktop, because the computational resources required to display the program are offloaded from DynoSparky, allowing the server to remain optimized in its role for multiple simultaneous connections. On Mac, you may need to first install [XQuarts](https://www.xquartz.org/). E.g.,
 
-       ssh -X NILUSER@dynosparky.neuroimage.wustl.edu
+```
+ssh -X NILUSER@dynosparky.neuroimage.wustl.edu
+```
 
 ## Setting Up for the First Time on DynoSparky
 The first time you log in, you'll need to make some modifications. It will be useful first to review the Command Line Help and Tips section. A great deal can be accomplished through the use of even just a few Bash commands, and it *will* save you time and energy to have them at your disposal.
@@ -90,11 +92,14 @@ LCBD members have compiled the most ubiquitous commands and shortcuts into a tem
 
 1. Enter the following command:
 
-       echo /data/perlman/moochie/user_data/cshrc.txt >> ~/.cshrc
-
+```
+echo /data/perlman/moochie/user_data/cshrc.txt >> ~/.cshrc
+```
 
 This will append the contents of the template cshrc file to your personal configuration, `~/.cshrc`. NOTE: it is pertinent that you use `>>` and not `>` (two carats). `>>` appends to a file, whereas `>` writes the file out from scratch.
 
 2. After making changes to cshrc, they are not automatically loaded. Your csh configuratino file is only loaded once a new connection is made. Alternatively, you can force a refresh with:
 
-       source ~/.cshrc
+```
+source ~/.cshrc
+```
