@@ -2,7 +2,7 @@ In addition to the computational resources managed by NIL, we have access to res
 
 The MIR's HPC system is dedicated to in-vivo imaging, and currently we are allowed access through the Psychiatry Department. To request an account, you'll need to have completed your HIPAA training through [Learn@Work](http://www.learnatwork.wustl.edu/), after which you can submit an application [here](https://sites.wustl.edu/chpc/for-users/account-request/). Once accepted, familiarize yourself with the [Rules and Guidelines](https://sites.wustl.edu/chpc/for-users/rules-and-guidelines/) for accessing CHPC - there are many more nuances to computing through this system, and you should not jump in without being highly familiar with Unix systems, the SLURM job queue, and awareness of the rescrictions and relevant quotas.
 
-For any lingering questions regarding CHPC, you can visit the [FAQ page](https://sites.wustl.edu/chpc/for-users/frequently-asked-questions-faq/) or email the director, [Malcolm Tobias](mtobias@wustl.edu), who has been extremely helpful and kind in assisting.
+For any lingering questions regarding CHPC, you can visit the [FAQ page](https://sites.wustl.edu/chpc/for-users/frequently-asked-questions-faq/) or email the director, [Xing Huang](x.huang@wustl.edu), who has been extremely helpful and kind in assisting the lab with this resource.
 
 # Connecting to CHPC
 Once your account request has been accepted, you can access CHPC. To access via a 'login node' via SSH, you will use the following syntax:
@@ -18,7 +18,7 @@ Note: login3 is the alias for the "3rd gen" of login nodes used by CHPC. These w
 To view your disk quotas on CHPC, enter the following command:
 
 
-    check_quota
+    check_user_quota
 
 
 To view the job queue, you can enter `squeue` or `squeue -u wustlID` to view only the jobs you've submitted.
