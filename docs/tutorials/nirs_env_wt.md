@@ -43,7 +43,7 @@ where the port number is an integer between 9000 and 9999. Ideally, each lab mem
 
 If run successfully, script will output the exact details for the next steps. The DynoSparky side of things is done, and the SSH command it prints out is to be run on a **local** terminal, as shown below.
 
-  ![ssh tunnel](../assets/shh-tunneling.png)
+  ![ssh tunnel](../assets/ssh-tunnel.png)
 
 Once you've entered the SSH command it gives you, and authorized with your NIL password, you can open a web browser (any should be fine) and navigate to the URL, localhost:8888, where you should find the Jupyter web page. This is where you will enter the token passkey, if you haven't connected to the Jupyter server using this computer before. It will also give you the option to set a permanent password here, which you can reuse on any of your computers. 
 
