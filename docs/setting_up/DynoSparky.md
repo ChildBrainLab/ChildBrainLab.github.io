@@ -79,7 +79,7 @@ ssh -X NILUSER@dynosparky.neuroimage.wustl.edu
 ```
 
 ## Setting Up for the First Time on DynoSparky
-The first time you log in, you'll need to make some modifications. It will be useful first to review the Command Line Help and Tips section. A great deal can be accomplished through the use of even just a few Bash commands, and it *will* save you time and energy to have them at your disposal.
+The first time you log in, you'll need to make some modifications. It will be useful first to review the [Command Line Help and Tips](https://childbrainlab.github.io/tutorials/linux_wt/) section. A great deal can be accomplished through the use of even just a few Bash commands, and it *will* save you time and energy to have them at your disposal.
 
 Each user on DynoSparky has a login-node space. This path is abbreviated for each user to `~`, and is equivalent to `/home/user/NILUSER.` This path is not necessarily your personal storage compartment (it is quite small), but *is* used for storing information about your DynoSparky configuration, and tools which may help you navigate the servers.
 
