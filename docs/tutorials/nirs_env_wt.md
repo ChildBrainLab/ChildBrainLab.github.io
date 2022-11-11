@@ -23,7 +23,7 @@ The process for starting and connecting to a server is a bit lengthy, but is str
 
 To simplify this process, a single script, [startJupyterServer.sh](https://github.com/ChildBrainLab/LCBDtools/tree/main/scripts/NIRS/startJupyterServer.sh) takes care of steps 1 and 2, and prints exact directions for steps 3 and 4.
 
-# Starting the Jupyter Server
+## Starting the Jupyter Server
 Once you have opened a terminal / SSH connection to DynoSparky navigate to `/data/perlman/moochie/github/LCBDtools` using the following command:
 
     cd /data/perlman/moochie/github/LCBDtools
@@ -39,7 +39,7 @@ where the port number is an integer between 9000 and 9999. Ideally, each lab mem
 - 9999
 - 9001
 
-# Connecting to Your Jupyter Server
+## Connecting to Your Jupyter Server
 
 If run successfully, script will output the exact details for the next steps. The DynoSparky side of things is done, and the SSH command it prints out is to be run on a **local** terminal, as shown below.
 
@@ -61,7 +61,7 @@ You can click this to change the kernel to the NIRSenv so that you have access t
 
 You should now be good to proceed with your analysis.
 
-# Ending Your Jupyter Session
+## Ending Your Jupyter Session
 If you're having problems with your server, forgot which port you're using, or need to restart the session for any reason, you can follow these steps to end your Jupyter server(s). 
 
 1. Confirm the name of any of your tmux sessions using `tmux ls`. It will most likely be called `jupyter-server`, but depending on the steps you used to start, may also be simply a number, indexed starting at 0.
