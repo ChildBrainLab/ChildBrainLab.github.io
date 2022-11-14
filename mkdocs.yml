@@ -54,6 +54,7 @@ nav:
   - 'Linux / Command-Line': 'tutorials/linux_wt.md'
   - 'CNDA MRI Pipeline': 'tutorials/cnda_wt.md'
   - 'fNIRS Environment Setup': 'tutorials/nirs_env_wt.md'
+  - 'fMRI Processing Pipeline': 'tutorials/mri_wt.md'
 extra_css:
 - stylesheets/extra.css
 markdown_extensions:
