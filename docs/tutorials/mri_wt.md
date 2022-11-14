@@ -98,4 +98,17 @@ And run the following command:
     
 This will start quite a few jobs. The first steps are taken care of on a single node, but the smoothing and unarchiving will each occur on its own node. So, in reality, you're submitting as many jobs as there are subjects who need to be smoothed. This is noteworthy due to the 40 jobs / user cap on CHPC, meaning you may need to execute this command several times before all of the subjects have been thoroughly processed.
 
+## Evaluating Functional Runs for Quality
+Now that FMRIPREP is complete, and we've run the post-processing script, we should evaluate the confounds file in the FMRIPREP output to ensure that subjects are not moving excessively. Similarly to the script which evaluates the subjects who need to be run through FMRIPREP, there is a Python script which can generate a list of valid subjects for us. First, navigate to the FSL directory:
 
+    cd /home/claytons/LCBDtools/scripts/MRI/fsl
+
+Then, execute the script's help text with the following command:
+
+    python3 get_fsl_subs.py --help
+    
+Once you have read over the required and optional arguments, you can submit the evaluation with the following:
+
+    python3 get_fsl_subs.py --data_folder /scratch/claytons/MRI_data_clean
+    
+A list of subjects who pass the framewise-displacement motion criteria will be printed out to `~/fsl_subs.txt`. These are subjects who should be used in analysis moving forward. However, you should also evaluate the individual quality of the registration and T1 images using the `.html` output in the fmriprep derivatives folder, located at `/scratch/claytons/MRI_data_clean/derivatives/fmriprep`. Each subject has its own `.html` file, which can be opened in a web browser and inspected. It details information about the relevant confounds, displays images on the registration and field map interpretations, and will inform you of dropout and other MR artifacts. Any subjects with highly abnormal data shown here should also be excluded from analysis. 
