@@ -106,7 +106,9 @@ On the next line, you will enter a one-time generated password from the Google A
 Since you're storing your password in a plain-text file, you'll want to enable permissions on these files such that nobody else can read them. To protect the files, run these commands:
 
     chmod 600 /home/usr/USERNAME/.xnatPass
+    
     chmod 600 /home/usr/USERNAME/.netrc
+    
     chmod 600 /home/usr/USERNAME/.email_creds
 
 That's all! You should now be authenticated to run the entirety of the automated CNDA data retrieval procedures, automatically through the cron job scheduler.
