@@ -22,6 +22,8 @@ You can think of every command like a shortcut - the actual functionality of the
 | `ls -a` | Lists hidden files as well |
 | `ls -l` | Lists vertically with detailed information |
 | `ls -la` | *You can combine flags like so!* |
+| `ls -l *` | List each subfolder in a directory |
+| `ls -d /path/to/files/sub-*/ses-*/func` | List the relative paths of all of the matching folders |
 | `cd ~` | Navigate to $HOME directory |
 | `cd ..` | Navigate one level up |
 | `cd <path>` | Navigate to <path> |
@@ -44,7 +46,6 @@ You can think of every command like a shortcut - the actual functionality of the
 | `nano <filename>` | Edit a file in the nano text editor |
 | `vim <filename>` | Edit a file in the vim text editor |
 | `grep "filterkey"` | Filters a standard output for lines containing "filterkey" |
-| `cmd1 | cmd2` | Pipe stdout of cmd1 to cmd2 |
 | `CTRL-c` | Stop current command |
 
 These are just a few and some of the most powerful / common of many built-in commands.
@@ -72,4 +73,4 @@ Docker is a software we have access to on DynoSparky, which allows us to build, 
 
 For example, when the latest releases of MRIQC, FMRIPREP, and LCBD scripts all rely on different versions of the PyDicom package, a Docker container works as a solution. In the figure below, Docker containers are represented on the left, and virutal machines on the right.
 
-![Docker vs Virtual Machines](assets/linux_Docker-vs-virtual-machines.png)
+![Docker vs Virtual Machines](../assets/linux_Docker-vs-virtual-machines.png)
