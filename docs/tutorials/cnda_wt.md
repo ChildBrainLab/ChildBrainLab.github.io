@@ -75,10 +75,21 @@ To open and edit the correct (expected) file, enter the following command:
 and enter the following line, formatting the WUSTLID and PASSWORD fields with your WUSTL / CNDA credentials. Remove the brackets.
 
     +<WUSTLID>@https://cnda.wustl.edu/REST=<PASSWORD>
+    
+After saving the file, we will now edit another CNDA credentials file:
 
-Then, enter the following command, which will ensure that only you ever have access to this plain-text version of your username and password. 
+    vim /home/usr/USERNAME/.netrc
+    
+The format of the `.netrc` file is as follows:
 
-    chmod 600 /home/usr/USERNAME/.xnatPass
+```
+machine cnda.wustl.edu
+login <cnda_userid>
+password <cnda_pw>
+machine https://cnda.wustl.edu
+login <cnda_userid>
+password <cnda_pw>
+```
     
 Once this has been done successfully, you should be authorized to use the XNAT pipeline!
 
@@ -90,5 +101,12 @@ In a similar configuration, the CNDA tools rely on an automated email service, a
 On the first line, you'll enter the email address: `LCBDtools@gmail.com`. 
 
 On the next line, you will enter a one-time generated password from the Google App Password service. If this is new to you, you can see the instructions on [this page](https://support.google.com/mail/answer/185833?hl=en). The actual password to the email account is the usual LCBD password, but for this service we need the one-time App Password, which you can generate by logging into the LCBDtools@gmail.com Google Account, selecting Security > App Passwords > Select app > Select device > Generate. Paste the generated password into the 2nd line of the `.email_creds` file. 
+
+### Protecting Your Credentials
+Since you're storing your password in a plain-text file, you'll want to enable permissions on these files such that nobody else can read them. To protect the files, run these commands:
+
+    chmod 600 /home/usr/USERNAME/.xnatPass
+    chmod 600 /home/usr/USERNAME/.netrc
+    chmod 600 /home/usr/USERNAME/.email_creds
 
 That's all! You should now be authenticated to run the entirety of the automated CNDA data retrieval procedures, automatically through the cron job scheduler.
