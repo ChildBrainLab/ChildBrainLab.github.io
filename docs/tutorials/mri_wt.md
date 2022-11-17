@@ -33,6 +33,20 @@ And insert the following contents:
 The formatted data will now synchronize to CHPC every Sunday morning. 
 
 ### BIDS Formatting
+You'll first want a list of subjects who have yet to be formatted in the BIDS dataset. I.e., they have a session in `/sourcedata`, but that session isn't BIDS-formatted. 
+
+There is a script for generating a list of un-BIDS'd subjects. To navigate to it, run this command:
+    
+    cd /home/claytons/LCBDtools/scripts/MRI/bids
+    
+And run the following command:
+
+    python3 get_bids_participants.py --help
+
+This will print information about the required and optional arguments for the script. To run,
+
+    python3 get_bids_participants.py --data_folder /scratch/claytons/MRI_data_clean
+
 The script for submitting [BIDSkit](https://github.com/jmtyszka/bidskit) jobs on CHPC is located in `/home/claytons/LCBDtools/scripts/MRI/sbatch/bidskit_sbatch.sh`.
 
 To use the script, navigate to the sbatch directory with the following command:
@@ -42,6 +56,10 @@ To use the script, navigate to the sbatch directory with the following command:
 And submit a BIDSKIT job with the following command, substituting <SUBJECT_ID> with the intended subject number:
 
     sbatch bidskit_sbatch.sh /scratch/claytons/MRI_data_clean/ <SUBJECT_ID>
+    
+Or, alternatively, if you'd like to loop over all of the participants you generated in the previous step, you could use a bash loop, as follows:
+
+    for sub in `cat ~/bids_list.txt`; do sbatch bidskit_sbatch.sh /scratch/claytons/MRI_data_clean/ $sub; done
     
 This will submit a job to CHPC. You can view activate jobs with the following command:
 
