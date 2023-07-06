@@ -9,7 +9,7 @@ On a lab PC (5th or 6th floor of 4444), once you are logged in with your NIL acc
 1. Open File Explorer
 2. Right click "This PC" on the sidebar
 3. Click "Map network drive"
-4. For "Folder" enter: "\\10.20.145.96\moochie"
+4. For "Folder" enter: "\\10.20.145.33\moochie"
 5. Make sure "reconnect at sign-in" is checked
 6. Click "Finish"
 7. Login using the the username 'neuroimage\nil-username' and your nil password
